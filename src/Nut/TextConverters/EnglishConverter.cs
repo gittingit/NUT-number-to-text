@@ -114,6 +114,13 @@ namespace Nut.TextConverters
                         Names = new[] { "Belarusian ruble", "Belarusian rubles" },
                         SubUnitCurrency = new BaseCurrencyModel { Names = new[] { "kopek", "kopeks" } }
                     };
+                case Currency.PHP:
+                    return new CurrencyModel
+                    {
+                        Currency = currency,
+                        Names = new[] { "peso", "pesos" },
+                        SubUnitCurrency = new BaseCurrencyModel { Names = new[] { "cent", "cents" } }
+                    };
             }
             return null;
         }
